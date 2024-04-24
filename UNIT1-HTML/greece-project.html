@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel to Greece</title>
+    <script
+      src="https://kit.fontawesome.com/d06cb09b4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .logo {
+        color: #ff5a5f;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+      .logo i {
+        font-size: 1.5rem;
+      }
+      nav ul,
+      .user ul {
+        display: flex;
+        list-style: none;
+        font-weight: 300;
+      }
+
+      nav ul li,
+      .user ul li {
+        padding: 0 10px;
+      }
+      nav ul li:first-child,
+      .user ul li:first-child {
+        font-weight: 500;
+      }
+
+      header {
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+      }
+      .divider-line {
+        border-bottom: 1px solid rgb(229, 229, 229);
+        margin-bottom: 20px;
+      }
+      main {
+        margin: 20px auto;
+        width: 70%;
+      }
+      .home-title p {
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .home-pics {
+        margin: auto;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .pics-left,
+      .pics-right {
+        width: 50%;
+      }
+
+      .pics-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        gap: 5px;
+        border-radius: 0 20px 20px 0;
+        overflow: hidden;
+      }
+
+      .pics-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .pic {
+        flex: 48%;
+        height: 49%;
+      }
+      .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .home-info {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      .home-info-main {
+        flex: 1;
+      }
+      .home-info-main p {
+        margin-top: 5px;
+        font-weight: 300;
+      }
+      .rating {
+        margin-bottom: 20px;
+      }
+      .description {
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+      .home-info-reserve {
+        width: 400px;
+        border: 1px solid rgb(229, 229, 229);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 3px 17px -15px rgba(66, 68, 90, 1);
+      }
+
+      .price {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      .home-info-reserve button {
+        margin: 20px 0 10px 0;
+        width: 100%;
+        padding: 13px;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        background-color: #e5393e;
+        cursor: pointer;
+      }
+
+      .charge {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .home-info-reserve table {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .home-info-reserve table td {
+        padding: 4px 0;
+      }
+      .home-info-reserve table td:last-child {
+        text-align: right;
+      }
+
+      footer {
+        background-color: rgb(247, 247, 247);
+      }
+      .footer-text {
+        padding: 20px 0;
+        width: 70%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- div with class logo -->
+      <div class="logo">
+        <p><i class="fa-brands fa-airbnb"></i> airbca</p>
+      </div>
+      <!-- nav tag. inside the nav tag you should have a ul list-->
+      <nav>
+        <ul>
+          <li>Stays</li>
+          <li>Experiences</li>
+          <li>Online Experiences</li>
+        </ul>
+      </nav>
+      <!-- div with class user. inside the div you should have a ul list -->
+      <nav>
+        <ul>
+          <li>Airbca your home</li>
+          <li><i class="fa-solid fa-globe"></i></li>
+          <li><i class="fa-solid fa-bars"></i></li>
+          <li><i class="fa-solid fa-user"></i></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="divider-line"></div>
+    <main>
+      <!-- div with a class home-title. inside the div you should have a p tag -->
+      <div class="home-title">
+        <p>Awesomesauce home</p>
+      </div>
+      <!-- div with a class home-pics. inside the div you should have the following divs -->
+      <div class="home-pics">
+      <!-- 1 - div with a class pics-left. inside the div you should have an img tag with the image src address -->
+        <div class="pics-left">
+          <img src="" alt="">
+        </div>
+      <!-- 2 - div with a class pics-right. inside the div you should have 4 divs as following -->
+        <div class="pics-right">
+      <!-- 2.1 - div with a class pic. inside the div you should have an img tag with the image src address -->
+          <div class="pic"><img src="" alt=""></div>
+      <!-- 2.2 - div with a class pic. inside the div you should have an img tag with the image src address -->
+          <div class="pic"><img src="" alt=""></div>
+      <!-- 2.3 - div with a class pic. inside the div you should have an img tag with the image src address -->
+          <div class="pic"><img src="" alt=""></div>
+      <!-- 2.4 - div with a class pic. inside the div you should have an img tag with the image src address -->
+          <div class="pic"><img src="" alt=""></div>
+        </div>
+      </div>
+      <!-- div with a class home-info. inside the div you should have the following divs -->
+      <div class="home-info">
+      <!-- 1 - div with a class home-info-main. inside the div you should have the following -->
+        <div class="home-info-main">
+      <!-- h2 for home subtitle -->
+          <h2>home subtitle</h2>
+      <!-- p for home infor like how many rooms etc. -->
+          <p>4 Guests, 2 bedrooms, 3 beds, 1 bath</p>
+      <!-- p with a class rating for stars and review info -->
+          <p class="rating"><i class="fa-solid fa-star"></i> 4.77 - 346 reviews</p>
+        </div>
+          <div class="divider-line"></div>
+      <!-- 2 - div with a class home-info-reserve. inside the div:  -->
+        <div class="home-info-reserve">
+      <!-- p for price. Make sure to wrap the dollar amount with a span tag with price class -->
+          <p><span class="price">$1.00</span> a night</p>
+      <!-- button for Reserve button -->
+          <button>Reserve</button>
+      <!-- p with a class charge for the "You won't be charged yet" text -->
+          <p class="charge">You won't be charged yet</p>
+      <!-- table with price information -->
+          <table>
+            <tr>
+              <td>Night</td>
+              <td>$1.00</td>
+            </tr>
+            <tr>
+              <td>Cleaning Fee</td>
+              <td>$1.00</td>
+            </tr>
+            <tr>
+              <td>Airbca Fee</td>
+              <td>$1.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="divider-line"></div>
+      <!-- div with a class footer-text. inside the div: have a p for the footer text -->
+      <p class="footer-text">definitely the real website. not a fraud.</p>
+    </footer>
+  </body>
+</html>
