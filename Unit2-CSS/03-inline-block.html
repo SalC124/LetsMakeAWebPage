@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline vs Block Elements</title>
+    <style>
+        * {
+            border: 2px solid tomato;
+        }
+
+        body {
+            border: 2px solid blue;
+        }
+
+        .inline-list li {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>H1 is a block element</h1>
+    <p>paragraph is also a block element</p>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <ul class="inline-list">
+        <li>items</li>
+        <li>items</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat est sint
+        tempore <span>i am inline</span> quod voluptates cupiditate animi magni
+        dicta, consequuntur qui earum maiores assumenda beatae, similique voluptas
+        saepe laboriosam, harum iure.
+    </p>
+</body>
+
+</html>

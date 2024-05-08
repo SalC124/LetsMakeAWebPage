@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel to Greece</title>
+    <script src="https://kit.fontawesome.com/d06cb09b4c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            color: #ff5a5f;
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        .logo i {
+            font-size: 1.5rem;
+        }
+
+        nav ul,
+        .user ul {
+            display: flex;
+            list-style: none;
+            font-weight: 300;
+        }
+
+        nav ul li,
+        .user ul li {
+            padding: 0 10px;
+        }
+
+        nav ul li:first-child,
+        .user ul li:first-child {
+            font-weight: 500;
+        }
+
+        header {
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+        }
+
+        .divider-line {
+            border-bottom: 1px solid rgb(229, 229, 229);
+            margin-bottom: 20px;
+        }
+
+        main {
+            margin: 20px auto;
+            width: 70%;
+        }
+
+        footer {
+            background-color: rgb(247, 247, 247);
+        }
+
+        .footer-text {
+            padding: 20px 0;
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- div with class logo -->
+        <div class="logo">
+            <p><i class="fa-brands fa-airbnb"></i> airbca</p>
+        </div>
+        <!-- nav tag. inside the nav tag you should have a ul list-->
+        <nav>
+            <ul>
+                <li>Stays</li>
+                <li>Experiences</li>
+                <li>Online Experiences</li>
+            </ul>
+        </nav>
+        <!-- div with class user. inside the div you should have a ul list -->
+        <nav>
+            <ul>
+                <li><a href="greece-project-form.html">Airbca your home</a></li>
+                <li><i class="fa-solid fa-globe"></i></li>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="divider-line"></div>
+    <main>
+        <div>
+            <label for="title"><strong>Title</strong></label>
+            <br>
+            <input type="text" id="title" />
+            <br>
+            <label for="address"><strong>Address</strong></label>
+            <br>
+            <input type="text" id="address" />
+        </div>
+    </main>
+    <footer>
+        <div class="divider-line"></div>
+        <!-- div with a class footer-text. inside the div: have a p for the footer text -->
+        <p class="footer-text">definitely the real website. not a fraud.</p>
+    </footer>
+</body>
+
+</html>
