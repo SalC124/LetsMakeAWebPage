@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline vs Block</title>
+    <style>
+        span {
+            border: 1px solid green;
+            background-color: lightgreen;
+            width: 200px;
+            height: 200px;
+            /* inline elements don't pick up width height */
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum <span>dolor sit</span> amet consectetur adipisicing elit. Minus in sunt ut debitis tenetur dicta accusamus, pariatur explicabo recusandae. Id et officia minima repellat sint non dolorum consequatur? Aliquam labore nesciunt deserunt itaque explicabo, assumenda quia quaerat nam praesentium incidunt!
+    </p>
+</body>
+</html>
